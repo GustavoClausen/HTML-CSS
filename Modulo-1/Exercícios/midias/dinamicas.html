@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\Gustavo Clausen\OneDrive\Peano Cidadania\Logos\Logo cavalo\horse_icon.svg" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>LOGO</h1>
+    <picture>
+        <img src="C:\Users\Gustavo Clausen\OneDrive\Peano Cidadania\Logos\logo_783x250.svg" alt="LOGO">
+        
+    </picture>
+
+    <h1>IMAGENS DINÂMICAS</h1>
+    <p>Tente abrir este site em vários dispositivos ou aumente e diminua o navegador</p>
+    <picture>
+        <source media="(max-width: 710px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens\foto-grande.png" alt="Imagem flexível">
+
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Reproduzindo áudios em HTML5</p>
+
+    <!-- 1ª Maneira
+
+    <audio src="audios/Vaquero Perdido - The Mini Vandals.mp3" autoplay controls></audio>
+    -->
+
+    <!-- 2ª Maneira -->
+    <audio preload="metadata" autoplay controls>
+        <source src="audios/Vaquero Perdido - The Mini Vandals.mp3" type="audio/mpeg"> 
+        <source src="audios/Vaquero Perdido - The Mini Vandals.ogg" type="audio/ogg">
+        <source src="audios/Vaquero Perdido - The Mini Vandals.wav" type="audio/wav">
+        <p>
+            Infelizmente o navegador utilizado não reproduz arquivos de áudio.
+            <a href="audios/Vaquero Perdido - The Mini Vandals.mp3">Clique aqui para baixar o arquivo de áudio MP3.</a>
+        </p>
+        
+    </audio>
+
+
+    <h1>Incorporando vídeos hospedados localmente</h1>
+    <p>vídeo no próprio servidor</p>
+
+    <!-- 1ª Maneira
+    <video src="videos/meu-video.mp4" width="500" controls></video>
+    -->
+
+    <!-- 2ª Maneira -->
+
+    <video width="500" poster="" controls autoplay loop>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.mv4" type="video/mp4">
+        <source src="videos/meu-video.webm" type="video/webm">
+        <source src="videos/meu-video.ogg" type="video/ogg">
+        <p>Seu navegador não possui compatibilidade com reprodução de vídeos</p>
+    </video>
+
+
+    <h1>Incorporação de vídeos externos</h1>
+    <p>Vídeo do YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    
+</body>
+</html>

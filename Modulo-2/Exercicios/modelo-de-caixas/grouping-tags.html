@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        header{
+            background-color: rgba(1, 1, 70, 0.349);
+            padding: 10px;
+            margin: 10px;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aquamarine;
+            margin: 0px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        nav{
+            background-color: brown;
+            padding: 2px;
+            box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.400);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 25px;
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        article{
+            background-color: blueviolet;
+            padding: 2px;
+
+        }
+        article > aside{
+            background-color: rgba(196, 136, 252, 0.623);
+            padding: 1px;
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Meu Site</h1>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+
+            <article>
+                <h2>Notícias de Ontem</h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Soluta assumenda quaerat, in reiciendis ad quas excepturi magnam 
+                enim earum distinctio iure voluptatum, vitae nulla 
+                eligendi quo officia eum, veritatis rerum.
+                </p>
+            </article>
+            <article>
+                <h2>Notícias do dia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Explicabo, magni. Nostrum iusto beatae totam ut ad libero ab 
+                    repudiandae numquam a nesciunt quis inventore, 
+                    placeat esse, labore illo adipisci eos?
+                </p>
+                <aside>
+                    <p>Escrito por Gustavo Clausen</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desenvolvido por Gustavo Clausen
+        </p>
+    </footer>
+</body>
+</html>
