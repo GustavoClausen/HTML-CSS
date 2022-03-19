@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixas</title>
+    <style>
+        #container{
+            position: relative; /*Todo posicionamento de box em HTML é por padrão relative. Neste caso, estamos dexiando de maneira explícita*/
+            height: 450px;
+            width: 700px;
+            padding: 10px;
+
+            background-color: brown;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+        }
+        #conteudo{
+            position: absolute; /*Com o posicionamento absoluto, podmeos definir valores absolutos para seu posicionamento, ou seja, para os parâmtros left, right etc...*/
+            left: 50%;
+            top: 50%;
+
+            height: 250px;
+            width: 400px;
+
+            background-color: aquamarine;
+            /*margin: auto;   Alinhamento na horizontal*/
+
+            transform: translate(-50%, -50%);
+        }   
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>    
+</body>
+</html>
