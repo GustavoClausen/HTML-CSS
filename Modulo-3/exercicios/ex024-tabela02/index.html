@@ -14,8 +14,14 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
         td, th {
             border: 1px solid black;
+            padding: 5px;
         }
         thead, tfoot{
             background-color: rgba(0, 0, 0, 0.637);
@@ -27,7 +33,7 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    
     <!--
         ANATOMIA DA TABELA
         
@@ -38,13 +44,18 @@
         TFOOT
             TR, TD, TH
 
+        tr  > representa uma linha de uma tabela
+        th  > representa o título de uma tabela
+        td  > representa um dado da tabela (que vem abaixo do título)
+
     -->
     <table>
+        <caption>População dos Estados brasileiros</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 10px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 110px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -187,7 +198,7 @@
         <tfoot>
             <tr>
                 <td></td>
-                <th>Total Habitantes</th>
+                <th scope="row">Total Habitantes</th>
                 <td class="valor">213 317 639</td>
             </tr>
         </tfoot>
