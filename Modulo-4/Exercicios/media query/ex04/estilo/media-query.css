@@ -1,7 +1,64 @@
 @charset "UTF-8";
 
-/*          TODAS AS MÍDIAS RESTANTES           */
+/*          TODAS AS MÍDIAS RESTANTES           
+
+Typical Device Breackpoints
+
+Pequenas telas: Até 600px
+Celular: De 601px até 768px
+Tablet: De 769px até 992px
+Desktop: De 993px até 1200px
+Grandes telas: Acima de 1201px
+
+*/
 
 @media print {
-    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main {
+        border: 2px solid black;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /*TABLET*/
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    /*DESKTOP*/
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 1201px) {
+    /*TELAS GRANDES*/
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
 }
