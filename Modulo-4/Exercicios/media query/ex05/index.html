@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <title>Menu Hamburguer - Projeto</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Teste de menu responsivo</h1>
         <span id="btburguer" class="material-symbols-outlined" onclick="clickNav()">menu</span>
@@ -92,6 +92,14 @@
     <script>
         function clickNav(){
             navBurguer.style.display == "block" ? navBurguer.style.display = "none" : navBurguer.style.display = "block";
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                navBurguer.style.display = "block";
+            }
+            else{
+                navBurguer.style.display = "none";
+            }
         }
     </script>
 </body>
